@@ -1,8 +1,8 @@
 name: flutter_torch
-description: A new flutter plugin project.
+description: Plugin for switching it on or off torch.
 version: 0.0.1
-author:
-homepage:
+author: slecoustre <slecoustre@hotmail.com>
+homepage: https://github.com/slecoustre/flutter_torch
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

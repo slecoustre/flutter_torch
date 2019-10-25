@@ -48,7 +48,24 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Has torch: $_hasTorch\n'),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Text('Has torch: $_hasTorch\n'),
+              RaisedButton(
+                onPressed: () {
+                  FlutterTorch.turnOn();
+                },
+                child: Text('Turn On'),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  FlutterTorch.turnOff();
+                },
+                child: Text('Turn Off'),
+              ),
+            ],
+          ),
         ),
       ),
     );
