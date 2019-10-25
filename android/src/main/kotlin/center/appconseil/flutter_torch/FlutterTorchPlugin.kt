@@ -5,6 +5,7 @@ import android.content.Context
 import android.hardware.camera2.CameraCharacteristics
 import android.hardware.camera2.CameraManager;
 import android.os.Build
+import android.util.Log
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
@@ -13,6 +14,7 @@ import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
 
 class FlutterTorchPlugin(var cameraManager: CameraManager): MethodCallHandler {
+  val TAG = "FlutterTorchPlugin"
 
   companion object {
     @JvmStatic
@@ -24,6 +26,7 @@ class FlutterTorchPlugin(var cameraManager: CameraManager): MethodCallHandler {
   }
 
   override fun onMethodCall(call: MethodCall, result: Result) {
+    Log.d(TAG, call.method)
     when(call.method) {
       "hasLamp" -> result.success(hasLamp())
       "turnOn" -> {

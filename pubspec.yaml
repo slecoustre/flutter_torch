@@ -1,6 +1,6 @@
 name: flutter_torch
-description: Plugin for switching it on or off torch.
-version: 0.0.1
+description: This plugin allows you to know if the camera has a flash. It also turns the flash on and off
+version: 0.1.0
 author: slecoustre <slecoustre@hotmail.com>
 homepage: https://github.com/slecoustre/flutter_torch
 
