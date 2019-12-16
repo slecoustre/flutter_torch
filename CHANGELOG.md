@@ -1,3 +1,7 @@
+## 0.2.1
+
+* Fix migrate
+
 ## 0.2.0
 
 * Update for flutter 1.12
