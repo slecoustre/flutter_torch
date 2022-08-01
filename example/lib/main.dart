@@ -52,13 +52,13 @@ class _MyAppState extends State<MyApp> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text('Has torch: $_hasTorch\n'),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   FlutterTorch.turnOn();
                 },
                 child: Text('Turn On'),
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   FlutterTorch.turnOff();
                 },
